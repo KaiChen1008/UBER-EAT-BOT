@@ -47,6 +47,7 @@ async function on_listening(context) {
 
 module.exports = async function App(context) {
   // await context.sendText('Welcome to Bottender');
+  // console.log(context.event);
   if (context.event.isText && context.event.text === 'state') {
     context.sendText(state);
   }
@@ -59,8 +60,8 @@ module.exports = async function App(context) {
     case STATE.LISTENING:
       on_listening(context);
       break;
-    // case STATE.FINISHED:
-    //   on_finished(context);
-    //   break;
+    case STATE.FINISHED:
+      on_finished(context);
+      break;
   }
 };
