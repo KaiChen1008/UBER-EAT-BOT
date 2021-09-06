@@ -1,6 +1,38 @@
 This project was bootstrapped with
 [Bottender](https://github.com/Yoctol/bottender) init script.
 
+## Prerequisites 
+```
+➜  ~ npm --version
+7.21.1
+➜  ~ node --version
+v14.17.6
+```
+
+## Recommend Tools
+1. Use `yarn` instead
+2. use `nvm` to manage npm version
+
+
+## Installation
+```
+git clone --recursive https://github.com/KaiChen1008/UBER-EAT-BOT/
+git submodule foreach --recursive git pull origin master
+```
+
+## Develop
+```
+npm install
+
+
+# local
+npm run dev -- --console
+
+# hook line sever
+npm run dev
+```
+
+
 ## Sending Feedback
 
 Always feel free to open an issue to
